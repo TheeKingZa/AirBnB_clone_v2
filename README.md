@@ -1,4 +1,4 @@
-# AirBnB Clone
+# AirBnB Clone v2
 # [Authors](https://github.com/TheeKingZa/AirBnB_clone_v2/blob/master/AUTHORS) 
 
 # Description
