@@ -49,73 +49,94 @@ Environment variables will be your best friend for this project!
 ## Unit Testing
     Unit testing is a software testing method in which individual units or components of a program are tested in isolation to ensure that they function correctly. The primary goal of unit testing is to validate that each unit of the software performs as designed. In a large project, unit testing becomes crucial for maintaining code quality, catching bugs early in the development process, and facilitating code refactoring.
 
-Why Unit Testing?
-	1. Early Detection of Bugs: Unit tests help identify and fix bugs at an early stage, preventing them from escalating into larger issues.
+	* Why Unit Testing?
+		1. Early Detection of Bugs: Unit tests help identify and fix bugs at an early stage, preventing them from escalating into larger issues.
+		2. Code Refactoring: Unit tests provide a safety net for making changes to the codebase. Developers can confidently refactor code knowing that existing functionality won't break.
+		3. Documentation: Unit tests serve as living documentation, showcasing how each component of the system is intended to work.
+		4. Continuous Integration: Automated unit tests are integral to continuous integration pipelines, ensuring that new code changes do not introduce regressions.
 
-	2. Code Refactoring: Unit tests provide a safety net for making changes to the codebase. Developers can confidently refactor code knowing that existing functionality won't break.
+	* How to Implement Unit Testing in a Large Project
+		1. Choose a Testing Framework:
+			Select a testing framework that fits your project and programming language. Popular choices include unittest for Python, JUnit for Java, and JUnit for JavaScript.
 
-	3. Documentation: Unit tests serve as living documentation, showcasing how each component of the system is intended to work.
+		2. Organize Your Project Structure:
+			Arrange your project in a way that facilitates easy testing. Place your unit tests in a separate directory, and structure your code to be modular and testable.
 
-	4. Continuous Integration: Automated unit tests are integral to continuous integration pipelines, ensuring that new code changes do not introduce regressions.
+		3. Write Testable Code:
+			Design your code with testability in mind. Break down complex functions into smaller, testable units. Use dependency injection to make it easier to isolate and test components.
 
-How to Implement Unit Testing in a Large Project
-	1. Choose a Testing Framework:
-Select a testing framework that fits your project and programming language. Popular choices include unittest for Python, JUnit for Java, and JUnit for JavaScript.
-
-	2. Organize Your Project Structure:
-Arrange your project in a way that facilitates easy testing. Place your unit tests in a separate directory, and structure your code to be modular and testable.
-
-	3. Write Testable Code:
-Design your code with testability in mind. Break down complex functions into smaller, testable units. Use dependency injection to make it easier to isolate and test components.
-
-	4. Write Unit Tests:
-Create individual test cases for each unit or component. Test a unit's inputs, outputs, and edge cases. Ensure that the tests cover a broad spectrum of scenarios.
+		4. Write Unit Tests:
+			Create individual test cases for each unit or component. Test a unit's inputs, outputs, and edge cases. Ensure that the tests cover a broad spectrum of scenarios.
 
 		Example (using Python's unittest):
 
-		pyCode
-		import unittest
-		from your_module import your_function
+			pyCode
+				import unittest
+				from your_module import your_function
 
-class TestYourFunction(unittest.TestCase):
-    def test_positive_input(self):
-        self.assertEqual(your_function(2, 3), 5)
+				class TestYourFunction(unittest.TestCase):
+				    def test_positive_input(self):
+				        self.assertEqual(your_function(2, 3), 5)
 
-    def test_negative_input(self):
-        self.assertEqual(your_function(-2, 3), 1)
+				    def test_negative_input(self):
+				        self.assertEqual(your_function(-2, 3), 1)
 
-    # Add more test cases as needed
-Automate Testing:
-Integrate your unit tests into your continuous integration pipeline. This ensures that tests are run automatically whenever there's a code change, providing rapid feedback.
+				    # Add more test cases as needed
+	* Automate Testing:
+		Integrate your unit tests into your continuous integration pipeline. This ensures that tests are run automatically whenever there's a code change, providing rapid feedback.
 
-Maintain and Update Tests:
-Regularly review and update your unit tests as the codebase evolves. Ensure that new features and changes are accompanied by corresponding test cases.
+	* Maintain and Update Tests:
+		Regularly review and update your unit tests as the codebase evolves. Ensure that new features and changes are accompanied by corresponding test cases.
 
 By incorporating unit testing into your development workflow, you can enhance the reliability, maintainability, and scalability of your large projects
+
+[^](#need-to-know)
 
 ## Args
 Explanation of what *args is and how to use it in Python.
 
+[^](#need-to-know)
+
 ## Kwargs
 Explanation of what **kwargs is and how to use it in Python.
+
+[^](#need-to-know)
 
 ## Named Arguments
 Guide on how to handle named arguments in a Python function.
 
+[^](#need-to-know)
+
 ## Create MySQL Database
 Step-by-step instructions on how to create a MySQL database.
+
+[^](#need-to-know)
 
 ## Create MySQL User and Grant Privileges
 Instructions on creating a MySQL user and granting the necessary privileges.
 
+[^](#need-to-know)
+
 ## ORM
 Definition and explanation of what ORM (Object-Relational Mapping) means.
+
+[^](#need-to-know)
 
 ## Map Class to MySQL Table
 Guide on how to map a Python Class to a MySQL table using ORM.
 
+[^](#need-to-know)
+
 ## Handle Multiple Storage Engines
 Explanation of how to handle 2 different storage engines with the same codebase.
 
+
+[^](#need-to-know)
+
 ## Use Environment Variables
 Instructions on how to use environment variables in Python projects.
+
+
+
+[^](#airbnb-clone-v2)
+
