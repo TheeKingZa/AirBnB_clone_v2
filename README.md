@@ -61,9 +61,7 @@ Read or watch:
 ## Unit Testing
 	Unit testing is a software testing method in which individual units or components of a program are tested in isolation to ensure that they function correctly.
  	The primary goal of unit testing is to validate that each unit of the software performs as designed.
-  	In a large project,
-   	unit testing becomes crucial for maintaining code quality,
-    	catching bugs early in the development process,
+  	In a large project, unit testing becomes crucial for maintaining code quality, catching bugs early in the development process,
      	and facilitating code refactoring.
 
 	* Why Unit Testing?
