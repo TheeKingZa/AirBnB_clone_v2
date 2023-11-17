@@ -173,7 +173,7 @@ By incorporating unit testing into your development workflow, you can enhance th
   	but sticking to this convention makes
    	your code more readable and consistent with the Python community.
 
-		pyCode;
+		pyCode:
 			def example_function(*custom_name):
 			    # Function logic here
 			    pass
@@ -182,7 +182,64 @@ By incorporating unit testing into your development workflow, you can enhance th
 [^](#need-to-know)
 
 ## Kwargs
-Explanation of what **kwargs is and how to use it in Python.
+	# **kwargs in Python
+		In Python, **kwargs is a special syntax that allows a function to accept a variable number of keyword arguments. 
+  		The term "kwargs" is short for "keyword arguments," and the double asterisk (**) before it indicates 
+    		that it can accept multiple keyword arguments.
+
+	# Purpose of **kwargs
+		While *args is used to pass a variable number of positional arguments, 
+  		**kwargs is used to pass a variable number of keyword arguments. 
+    		This is especially useful when you want to create functions that are flexible and
+      		can accept additional named parameters without explicitly defining them in the function signature.
+
+	# How to Use **kwargs
+		Here's a simple example to illustrate the use of **kwargs:
+
+			pyCode:
+				def print_kwargs(**kwargs):
+				    for key, value in kwargs.items():
+				        print(f"{key}: {value}")
+
+				# Using **kwargs to accept and print multiple keyword arguments
+				print_kwargs(name="John", age=25, city="New York")
+	
+ 	In this example, the print_kwargs function can accept any number of keyword arguments, 
+ 	and it will print each key-value pair. 
+  	The **kwargs syntax allows the function to handle a variable-length list of keyword arguments.
+
+	# Using **kwargs with Functions
+		You can use **kwargs when defining a function to indicate that it should accept any number of keyword arguments:
+
+   			pyCode:
+      				def example_function(**custom_kwargs):
+				    # Function logic here
+				    pass
+	# Passing **kwargs to Another Function
+		You can also use **kwargs to pass a dictionary of keyword arguments to another function:
+
+			pyCode:
+				def process_data(**kwargs):
+				    # Process data using keyword arguments
+				    pass
+
+				def main_function(**kwargs):
+				    # Do some logic
+				    process_data(**kwargs)  # Pass keyword arguments to another function
+				    # Continue with other logic
+		
+  		In this example, the process_data function receives the keyword arguments passed to main_function.
+
+# When to Use **kwargs
+	Use **kwargs when you want to create functions that can accept a variable number of keyword arguments. 
+ 	This is particularly useful in scenarios where additional parameters may be needed, 
+  	and you want your function to be adaptable to different situations.
+
+	Keep in mind that **kwargs is a convention, 
+ 	and you could use any other name preceded by a double asterisk, 
+  	but sticking to this convention makes your code more readable and consistent with the Python community.
+
+In summary, **kwargs allows you to work with an arbitrary number of keyword arguments, making your functions more versatile and flexible
 
 [^](#need-to-know)
 
