@@ -125,58 +125,58 @@ By incorporating unit testing into your development workflow, you can enhance th
 # Args
 	*args in Python
  	
-  	In Python, *args is a special syntax that allows a function to accept a variable number of positional arguments.
-   	The term "args" is a convention, and the asterisk (*) before it indicates that it can accept multiple arguments.
+  		In Python, *args is a special syntax that allows a function to accept a variable number of positional arguments.
+    		The term "args" is a convention, and the asterisk (*) before it indicates that it can accept multiple arguments.
 
-	* Purpose of *args
-		When defining a function,
-  		you may not always know in advance how many arguments it will receive.
-    		*args provides a flexible way to handle variable numbers of arguments without explicitly naming them.
+		# Purpose of *args
+			When defining a function,
+	  		you may not always know in advance how many arguments it will receive.
+    			*args provides a flexible way to handle variable numbers of arguments without explicitly naming them.
 
-	How to Use *args
-		Here's a simple example to illustrate the use of *args:
+		# How to Use *args
+			Here's a simple example to illustrate the use of *args:
 
-		pyCode:
-			def print_args(*args):
-			    for arg in args:
-			        print(arg)
+			pyCode:
+				def print_args(*args):
+				    for arg in args:
+				        print(arg)
 
-			# Using *args to accept and print multiple arguments
-			print_args(1, 2, 3, "four", 5.0)
+				# Using *args to accept and print multiple arguments
+				print_args(1, 2, 3, "four", 5.0)
 
-	In this example, the print_args function can accept any number of arguments,
- 	and it will print each argument.
-  	The *args syntax allows the function to handle a variable-length argument list.
+		In this example, the print_args function can accept any number of arguments,
+ 		and it will print each argument.
+  		The *args syntax allows the function to handle a variable-length argument list.
 
-	Unpacking with *args
-		You can also use *args when calling a function to unpack the elements from an 
-  		iterable (e.g., a list or tuple) and pass them as separate arguments:
+		# Unpacking with *args
+			You can also use *args when calling a function to unpack the elements from an 
+	  		iterable (e.g., a list or tuple) and pass them as separate arguments:
 
-		pyCode:
-			def add_numbers(*args):
-			    return sum(args)
+			pyCode:
+				def add_numbers(*args):
+				    return sum(args)
 
-			# Using *args to pass a list of numbers to the function
-			numbers = [1, 2, 3, 4, 5]
-			result = add_numbers(*numbers)
-			print(result)  # Output: 15
-	In this example, *numbers unpacks the elements of the list, and the add_numbers function receives them as separate arguments.
+				# Using *args to pass a list of numbers to the function
+				numbers = [1, 2, 3, 4, 5]
+				result = add_numbers(*numbers)
+				print(result)  # Output: 15
+		In this example, *numbers unpacks the elements of the list, and the add_numbers function receives them as separate arguments.
 
-	* When to Use *args
-		Use *args when you want to create functions that can accept a variable number of positional arguments.
-  		This is particularly useful in scenarios where the number of inputs may vary,
-    		and you want your function to be versatile.
+		* When to Use *args
+			Use *args when you want to create functions that can accept a variable number of positional arguments.
+	  		This is particularly useful in scenarios where the number of inputs may vary,
+    			and you want your function to be versatile.
 
-	Keep in mind that *args is a convention,
- 	and you could use any other name preceded by an asterisk,
-  	but sticking to this convention makes
-   	your code more readable and consistent with the Python community.
+		Keep in mind that *args is a convention,
+	 	and you could use any other name preceded by an asterisk,
+  		but sticking to this convention makes
+	   	your code more readable and consistent with the Python community.
 
-		pyCode:
-			def example_function(*custom_name):
-			    # Function logic here
-			    pass
-	In summary, *args allows you to work with an arbitrary number of positional arguments, making your functions more adaptable and versatile.
+			pyCode:
+				def example_function(*custom_name):
+				    # Function logic here
+				    pass
+		In summary, *args allows you to work with an arbitrary number of positional arguments, making your functions more adaptable and versatile.
 
 [^](#need-to-know)
 
