@@ -27,6 +27,7 @@ Read or watch:
 
 # NEED TO KNOW?
 * [Background Context](#background-context)
+* [Comments in SQL](comments-for-your-sql-file)
 * [What is Unit testing and how to implement it in a large project](#unit-testing)
 * [What is args and how to use it](#args)
 * [What is kwargs and how to use it](#kwargs)
@@ -55,6 +56,13 @@ Read or watch:
 		* HBNB_MYSQL_HOST: Contains the hostname of the MySQL server.
 		* HBNB_MYSQL_DB: Represents the database name for MySQL.
 		* HBNB_TYPE_STORAGE: Determines the type of storage used, such as "file" or "db."
+
+# Comments for your SQL file:
+	..$ cat my_script.sql
+		-- first 3 students in the Batch ID=3
+		-- because Batch 3 is the best!
+		SELECT id, name FROM students WHERE batch_id = 3 ORDER BY created_at DESC LIMIT 3;
+	..$
 
 [^](#need-to-know)
 
