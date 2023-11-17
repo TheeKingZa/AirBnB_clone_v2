@@ -37,14 +37,24 @@ Read or watch:
 * [How to use environment variables](#use-environment-variables)
 
 # **Background Context**
-Environment variables will be your best friend for this project!
+	# Environment variables will be your best friend for this project!
+ 	|	* HBNB_ENV: running environment. It can be “dev” or “test” for the moment (“production” soon!)
+   	|	* HBNB_MYSQL_USER: the username of your MySQL
+	|	* HBNB_MYSQL_PWD: the password of your MySQL
+	|	* HBNB_MYSQL_HOST: the hostname of your MySQL
+	|	* HBNB_MYSQL_DB: the database name of your MySQL
+	|	* HBNB_TYPE_STORAGE: the type of storage used. It can be “file” (using FileStorage) or db (using DBStorage)
+	|
+	# Environment Variables in Python
+	* In Python, the os module is commonly used to access environment variables. Here's a brief explanation of the environment variables mentioned in your context:
+ 		* HBNB_ENV: Indicates the running environment, such as "dev" or "test."
+		* HBNB_MYSQL_USER: Specifies the MySQL username.
+		* HBNB_MYSQL_PWD: Stores the MySQL password.
+		* HBNB_MYSQL_HOST: Contains the hostname of the MySQL server.
+		* HBNB_MYSQL_DB: Represents the database name for MySQL.
+		* HBNB_TYPE_STORAGE: Determines the type of storage used, such as "file" or "db."
 
-* HBNB_ENV: running environment. It can be “dev” or “test” for the moment (“production” soon!)
-* HBNB_MYSQL_USER: the username of your MySQL
-* HBNB_MYSQL_PWD: the password of your MySQL
-* HBNB_MYSQL_HOST: the hostname of your MySQL
-* HBNB_MYSQL_DB: the database name of your MySQL
-* HBNB_TYPE_STORAGE: the type of storage used. It can be “file” (using FileStorage) or db (using DBStorage)
+[^](#need-to-know)
 
 ## Unit Testing
 	Unit testing is a software testing method in which individual units or components of a program are tested in isolation to ensure that they function correctly.
