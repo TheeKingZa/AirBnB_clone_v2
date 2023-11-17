@@ -3,7 +3,9 @@
 
 # Description
 
-    This project is an implementation of a simplified version of AirBnB's backend system. It includes a command-line interpreter and a storage engine for managing data related to AirBnB-like objects.
+    This project is an implementation of a simplified version of AirBnB's backend system.
+    It includes a command-line interpreter
+    a storage engine for managing data related to AirBnB-like objects.
 
 ## Resources
 Read or watch:
