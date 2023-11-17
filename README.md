@@ -21,9 +21,12 @@ Read or watch:
 * [cmd module](https://wiki.python.org/moin/CmdModule)
 * [python unittest](https://realpython.com/python-testing/)
 
-# [Models](https://github.com/TheeKingZa/AirBnB_clone/blob/master/models/README.md)
+# For this project fork:
+  * [Codebase](https://github.com/justinmajetich/AirBnB_clone.git)
 
-# [Unittest](https://github.com/TheeKingZa/AirBnB_clone/blob/master/tests/README.md)
+# [Models](https://github.com/TheeKingZa/AirBnB_clone_v2/blob/master/models/README.md)
+
+# [Unittest](https://github.com/TheeKingZa/AirBnB_clone_v2/blob/master/tests/README.md)
 
 # NEED TO KNOW?
 * [Background Context](#background-context)
