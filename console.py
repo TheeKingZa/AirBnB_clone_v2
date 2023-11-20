@@ -72,7 +72,7 @@ class HBNBCommand(cmd.Cmd):
                 pline = pline[2].strip()  # pline is now str
                 if pline:
                     # check for *args or **kwargs
-                    if pline[0] is '{' and pline[-1] is'}'\
+                    if pline[0] == '{' and pline[-1] == '}'\
                             and type(eval(pline)) is dict:
                         _args = pline
                     else:
@@ -151,26 +151,39 @@ class HBNBCommand(cmd.Cmd):
         print(new_instance.id)
 
     def do_all(self, args):
-    """ Shows all objects, or all objects of a class"""
-    if not args:
-        print("** class name missing **")
-        return
+        """ Shows all objects, or all objects of a class"""
+        if not args:
+            print("** class name missing **")
+            return
 
-    args = args.split(' ')[0]  # remove possible trailing args
+        args_list = args.split(' ')[0]  # remove possible trailing args
 
-    if args not in HBNBCommand.classes:
-        print("** class doesn't exist **")
-        return
+        class_name = args_list[0]
 
-    print_list = []
+        if args not in HBNBCommand.classes:
+            print("** class doesn't exist **")
+            return
 
-    # Retrieve instances based on the class name
-    instances = storage.all().values()
-    for instance in instances:
-        if instance.__class__.__name__ == args:
-            print_list.append(str(instance))
+        print_list = []
 
-    print(print_list)
+        if len(args_list) > 1:
+            key = class_name + "." + args_list[1]
+            try:
+                print(storage.all()[key])
+            except KeyError:
+                print("** no instance found **")
+            return
+
+        # Retrieve instances based on the class name
+        instances = storage.all().values()
+        for instance in instances:
+            if instance.__class__.__name__ == class_name:
+                print_list.append(str(instance))
+
+        if not print_list:
+            print("** no instance found **")
+        else:
+            print(print_list)
 
 
     def help_create(self):
