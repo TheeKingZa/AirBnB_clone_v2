@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# console.py
 """ Console Module """
 import cmd
 import sys
@@ -146,7 +147,7 @@ class HBNBCommand(cmd.Cmd):
 
         # Save the instance to the storage
         storage.save()
-
+        
         # Print the id of the created instance
         print(new_instance.id)
 
