@@ -39,11 +39,11 @@ class HBNBCommand(cmd.Cmd):
         """Reformat command line for advanced command syntax.
 
         Usage: <class name>.<command>([<id> [<*args> or <**kwargs>]])
-        (Brackets denote optional fields in usage example.)
+        (Brackets denote optional fields in the usage example.)
         """
         _cmd = _cls = _id = _args = ''  # initialize line elements
 
-        # scan for general formating - i.e '.', '(', ')'
+        # scan for general formatting - i.e '.', '(', ')'
         if not ('.' in line and '(' in line and ')' in line):
             return line
 
@@ -67,7 +67,7 @@ class HBNBCommand(cmd.Cmd):
                 # isolate _id, stripping quotes
                 _id = pline[0].replace('\"', '')
                 # possible bug here:
-                # empty quotes register as empty _id when replaced
+                # empty quotes register as an empty _id when replaced
 
                 # if arguments exist beyond _id
                 pline = pline[2].strip()  # pline is now str
@@ -101,7 +101,7 @@ class HBNBCommand(cmd.Cmd):
         print("Exits the program with formatting\n")
 
     def do_EOF(self, arg):
-        """ Handles EOF to exit program """
+        """ Handles EOF to exit the program """
         print()
         exit()
 
@@ -147,7 +147,7 @@ class HBNBCommand(cmd.Cmd):
 
         # Save the instance to the storage
         storage.save()
-        
+
         # Print the id of the created instance
         print(new_instance.id)
 
@@ -186,13 +186,11 @@ class HBNBCommand(cmd.Cmd):
         else:
             print(print_list)
 
-
     def help_create(self):
         """ Help information for the create method """
         print("Creates a class of any type with given parameters")
         print("[Usage]: create <className> <param1>=<value1> <param2>=<value2> ...\n")
 
-    # Other methods remain unchanged...
 
 if __name__ == "__main__":
     HBNBCommand().cmdloop()

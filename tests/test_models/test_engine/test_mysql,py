@@ -1,0 +1,55 @@
+# test_create_state_command.py
+
+import unittest
+import MySQLdb
+import subprocess
+
+class TestCreateStateCommand(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        # Connect to MySQL database
+        cls.db = MySQLdb.connect(host="localhost", user="hbnb_test", passwd="hbnb_test_pwd", db="hbnb_test_db")
+
+    @classmethod
+    def tearDownClass(cls):
+        # Close the database connection after all tests
+        cls.db.close()
+
+    def test_before_create(self):
+        # Create a cursor object
+        cursor = self.db.cursor()
+
+        # Execute query to count records in the states table
+        cursor.execute("SELECT COUNT(*) FROM states;")
+
+        # Get the count of records
+        before_count = cursor.fetchone()[0]
+
+        # Close the cursor
+        cursor.close()
+
+        # Assert the count is as expected
+        self.assertEqual(before_count, expected_count)
+
+    def test_execute_command(self):
+        # Run the console command to create a new state
+        subprocess.run(["HBNB_ENV=test", "HBNB_MYSQL_USER=hbnb_test", "HBNB_MYSQL_PWD=hbnb_test_pwd", "HBNB_MYSQL_HOST=localhost", "HBNB_MYSQL_DB=hbnb_test_db", "HBNB_TYPE_STORAGE=db", "python3", "console.py", "create", "State", "name=\"California\""])
+
+    def test_after_create(self):
+        # Create a cursor object
+        cursor = self.db.cursor()
+
+        # Execute query to count records in the states table
+        cursor.execute("SELECT COUNT(*) FROM states;")
+
+        # Get the count of records after executing the command
+        after_count = cursor.fetchone()[0]
+
+        # Close the cursor
+        cursor.close()
+
+        # Assert the difference is +1
+        self.assertEqual(after_count - before_count, 1)
+
+if __name__ == "__main__":
+    unittest.main()
