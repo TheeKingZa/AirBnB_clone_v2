@@ -1,19 +1,19 @@
 /*
- * setup_mysql_test.sql
- * This script prepares a MySQL server for the testing environment of the AirBnB_clone_v2 project.
+ * setup_mysql_dev.sql
+ * This script prepares a MySQL server for the AirBnB_clone_v2 project.
  */
 
--- Create or use the database hbnb_test_db
-CREATE DATABASE IF NOT EXISTS hbnb_test_db;
+-- Create or use the database hbnb_dev_db
+CREATE DATABASE IF NOT EXISTS hbnb_dev_db;
 
--- Create or use the user hbnb_test
-CREATE USER IF NOT EXISTS 'hbnb_test'@'localhost' IDENTIFIED BY 'hbnb_test_pwd';
+-- Create or use the user hbnb_dev
+CREATE USER IF NOT EXISTS 'hbnb_dev'@'localhost' IDENTIFIED BY 'hbnb_dev_pwd';
 
--- Grant all privileges on hbnb_test_db to hbnb_test
-GRANT ALL PRIVILEGES ON hbnb_test_db.* TO 'hbnb_test'@'localhost';
+-- Grant all privileges on hbnb_dev_db to hbnb_dev
+GRANT ALL PRIVILEGES ON hbnb_dev_db.* TO 'hbnb_dev'@'localhost';
 
--- Grant SELECT privilege on performance_schema to hbnb_test
-GRANT SELECT ON performance_schema.* TO 'hbnb_test'@'localhost';
+-- Grant SELECT privilege on performance_schema to hbnb_dev
+GRANT SELECT ON performance_schema.* TO 'hbnb_dev'@'localhost';
 
 -- Flush privileges to apply changes
 FLUSH PRIVILEGES;
