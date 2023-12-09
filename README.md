@@ -1,4 +1,5 @@
 # AirBnB Clone v2
+#   * Deploy static
 # [Authors](https://github.com/TheeKingZa/AirBnB_clone_v2/blob/master/AUTHORS) 
 
 # Description
