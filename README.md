@@ -1,5 +1,5 @@
 # [0x02: AirBnB Clone-v2](#airbnb-clone)
-# [...](#v2)
+# ...
 
 # [0x03: Deploy Static](#deploy-static)
 
