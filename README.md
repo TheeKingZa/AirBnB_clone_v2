@@ -49,7 +49,7 @@ Read or watch:
 * [How to use environment variables](#use-environment-variables)
 ---
 # [AirBnB Clone](#airbnb-v2)
-[v2](#v2)
+# v2
 # **Background Context**
 	# Environment variables will be your best friend for this project!
  	|	* HBNB_ENV: running environment. It can be “dev” or “test” for the moment (“production” soon!)
