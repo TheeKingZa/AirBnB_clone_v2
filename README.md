@@ -303,7 +303,7 @@ Instructions on how to use environment variables in Python projects.
 Concepts
 For this project, we expect you to look at these concepts:
 
-* [CI/CD](#ci-cd)
+* [CI/CD](https://digital.ai/catalyst-blog/walk-before-you-run-understanding-ci-in-cd/)
 * [AirBnB clone](#airbnb-clone)
 
 
@@ -311,7 +311,7 @@ For this project, we expect you to look at these concepts:
 
 
 CI/CD
-The lean/agile methodology (See: Twelve Principles of Agile Software) is now widely used by the industry and one of its key principles is to iterate as fast as possible. If you apply this to software engineering, it means that you should:
+The lean/agile methodology (See: [Twelve Principles of Agile Software](http://agilemanifesto.org/principles.html)) is now widely used by the industry and one of its key principles is to iterate as fast as possible. If you apply this to software engineering, it means that you should:
 
 code
 ship your code
