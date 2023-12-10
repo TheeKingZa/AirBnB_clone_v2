@@ -1,5 +1,5 @@
-# AirBnB Clone v2
-#   * Deploy static
+#[0x02]()AirBnB Clone v2
+#[0x03](#deploy-static)Deploy static
 # [Authors](https://github.com/TheeKingZa/AirBnB_clone_v2/blob/master/AUTHORS) 
 
 # Description
@@ -44,7 +44,8 @@ Read or watch:
 * [How to map a Python Class to a MySQL table](#map-class-to-mysql-table)
 * [How to handle 2 different storage engines with the same codebase](#handle-multiple-storage-engines)
 * [How to use environment variables](#use-environment-variables)
-
+---
+# AirBnB Clone v2
 # **Background Context**
 	# Environment variables will be your best friend for this project!
  	|	* HBNB_ENV: running environment. It can be “dev” or “test” for the moment (“production” soon!)
