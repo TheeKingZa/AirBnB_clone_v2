@@ -9,32 +9,27 @@ from datetime import datetime
 import os
 
 
+#!/usr/bin/python3
+'''
+Module contains a fab script to generates a .tgz archive from the contents
+of the web_static
+'''
+from fabric.api import local
+import os
+import time
+
+
 def do_pack():
-    """
-    Generates a .tgz archive from the contents of the web_static folder.
+    '''
+    A function that generaees a .tgx archive from the web_static folder
+    '''
+    if not os.path.exists('versions'):
+        os.makedirs('versions')
 
-    Returns:
-        str: Archive path if generated successfully, None otherwise.
-    """
+    filename = time.strftime("%Y%m%d%H%M%S")
+    fullpath = "versions/web_static_{}.tgz".format(filename)
     try:
-        # Create the 'versions' folder if it doesn't exist
-        local("mkdir -p versions")
-
-        # Generate the archive filename with the current date and time
-        now = datetime.now()
-        archive_name = "web_static_{}{}{}{}{}{}.tgz".format(
-            now.year, now.month, now.day, now.hour, now.minute, now.second
-        )
-
-        # Compress the web_static folder into the archive
-        local("tar -cvzf versions/{} web_static".format(archive_name))
-
-        # Return the archive path if successful
-        return "versions/{}".format(archive_name)
-
-    except Exception as e:
-        # Print an error message and return None if an exception occurs
-        print("Error: {}".format(e))
+        local("tar -cvzf {} web_static".format(fullpath))
+        return fullpath
+    except:
         return None
-
-# Run the script using 'fab -f 1-pack_web_static.py do_pack'
