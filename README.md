@@ -48,7 +48,7 @@ Read or watch:
 * [How to handle 2 different storage engines with the same codebase](#handle-multiple-storage-engines)
 * [How to use environment variables](#use-environment-variables)
 ---
-# [AirBnB Clone](#airbnb-v2)
+# AirBnB Clone
 # v2
 # **Background Context**
 	# Environment variables will be your best friend for this project!
