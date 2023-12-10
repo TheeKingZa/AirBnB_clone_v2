@@ -1,6 +1,6 @@
 #[0x02: AirBnB Clone v2](#airbnb-clone-v2)
 ---
-#[0x03: Deploy static](#deploy-static)
+#[0x03: Deploy Static](#deploy-static)
 ---
 #[Authors](https://github.com/TheeKingZa/AirBnB_clone_v2/blob/master/AUTHORS) 
 
@@ -293,7 +293,47 @@ Explanation of how to handle 2 different storage engines with the same codebase.
 ## Use Environment Variables
 Instructions on how to use environment variables in Python projects.
 
+---
+
+# Deploy static
 
 
+Concepts
+For this project, we expect you to look at these concepts:
+
+* [CI/CD](#ci-cd)
+* [AirBnB clone](#airbnb-clone)
+
+
+# More To Know !
+
+
+CI/CD
+The lean/agile methodology (See: Twelve Principles of Agile Software) is now widely used by the industry and one of its key principles is to iterate as fast as possible. If you apply this to software engineering, it means that you should:
+
+code
+ship your code
+measure the impact
+learn from it
+fix or improve it
+start over
+As fast as possible and with small iterations in days or even hours (whereas it used to be weeks or even months). One big advantage is that if product development is going the wrong direction, fast iteration will allow to quickly detect this, and avoid wasting time.
+
+From a technical point of view, quicker iterations mean fewer lines of code being pushed at every deploy, which allows easy performance impact measurement and easy troubleshooting if something goes wrong (better to debug a small code change than weeks of new code).
+
+
+
+Applied to software engineering, CI/CD (Continuous Integration/Continuous Deployment) is a principle that allows individuals or teams to have a lean/agile way of working.
+
+This translates to a “shipping pipeline” which is often built with multiple tools such as:
+
+Shipping the code:
+Capistrano, Fabric
+Encapsulating the code
+Docker, Packer
+Testing the code
+Jenkins, CircleCi, Travis
+Measuring the code
+Datadog, Newrelic, Wavefront
 [^](#airbnb-clone-v2)
 
