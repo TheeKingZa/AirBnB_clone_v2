@@ -2,10 +2,10 @@
 # install nginx and make folders
 
 # Check for root privileges
-if [ "$EUID" -ne 0 ]; then
-    echo "Please run as root or with sudo."
-    exit 1
-fi
+# if [ "$EUID" -ne 0 ]; then
+#    echo "Please run as root or with sudo."
+#    exit 1
+# fi
 
 # Install Nginx if not already installed
 if ! command -v nginx &> /dev/null; then
