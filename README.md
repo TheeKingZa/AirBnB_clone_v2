@@ -1,4 +1,4 @@
-# [0x02: AirBnB Clone v2](#airbnb-clone-v2)
+# [0x02: AirBnB Clone v2](#airbnb-clone)
 # [0x03: Deploy Static](#deploy-static)
 
 #[Authors](https://github.com/TheeKingZa/AirBnB_clone_v2/blob/master/AUTHORS) 
