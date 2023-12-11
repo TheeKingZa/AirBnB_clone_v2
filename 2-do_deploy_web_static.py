@@ -6,8 +6,7 @@ function do_deploy.
 """
 from fabric.api import env, put, run
 from os.path import exists
-from datetime
-
+from datetime import datetime  # Import datetime here
 
 # Update with your web server IP addresses
 env.hosts = ['100,26.153.74', '52.86.237.106']
