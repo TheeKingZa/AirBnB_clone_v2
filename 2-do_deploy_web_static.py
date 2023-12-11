@@ -1,20 +1,19 @@
 #!/usr/bin/python3
 """
 Fabric script that distributes an archive
-to your web servers using the 
+to your web servers using the
 function do_deploy.
 """
-
 from fabric.api import env, put, run
 from os.path import exists
-from datetime import datetime
-
+from datetime
 
 
 # Update with your web server IP addresses
 env.hosts = ['100,26.153.74', '52.86.237.106']
 env.user = 'ubuntu'
 env.key_filename = '~/.ssh/authorized_keys'
+
 
 def do_deploy(archive_path):
     """
@@ -31,7 +30,9 @@ def do_deploy(archive_path):
         # Extract the archive to
         # /data/web_static/releases/<filename without extension>/
         filename = archive_path.split('/')[-1]
-        folder_name = '/data/web_static/releases/{}'.format(filename.split('.')[0])
+        folder_name = '/data/web_static/releases/{}'.format(
+            filename.split('.')[0]
+            )
         run('mkdir -p {}'.format(folder_name))
         run('tar -xzf /tmp/{} -C {}'.format(filename, folder_name))
 
@@ -57,8 +58,8 @@ def do_deploy(archive_path):
         print(e)
         return False
 
+
 if __name__ == "__main__":
     # Example usage:
     archive_path = "/path/to/your/archive.tgz"
     do_deploy(archive_path)
-
