@@ -31,6 +31,8 @@ Welcome to the Web Framework Basics project! This README.md provides an overview
 3. Import Flask and define your app: 
 
     python
+    
+    ```
     from flask import Flask
     app = Flask(__name__)
     ```
@@ -46,8 +48,9 @@ Welcome to the Web Framework Basics project! This README.md provides an overview
 
 **Routes in Flask are defined using the `@app.route` decorator followed by the URL path.** For example:
 
-    ```
+    
     python
+    ```
     @app.route('/')
     def index():
       return 'Welcome to the homepage!'
@@ -63,9 +66,8 @@ This associates the specified URL path ('/') with the index() function, which re
 
 # How to Handle Variables in a Route
 **Variables can be handled within routes by specifying a variable section in the URL using <variable_name>.** For example:
-
-    ```
     python
+    ```
       @app.route('/user/<username>')
       def show_user_profile(username):
           return f'User: {username}'
@@ -84,8 +86,8 @@ Here, the show_user_profile() function takes the username variable from the URL 
   Create an HTML template file, e.g., template.html.
   Use Flask's render_template function to render the HTML template and pass dynamic data.
   Return the rendered template as a response. For example:
-      ```
       python
+      ```
         from flask import render_template
         @app.route('/hello/<name>')
       def hello(name=None):
@@ -100,8 +102,9 @@ This passes the name variable to the template.html file, which can display it dy
 **Dynamic templates in Flask allow for incorporating loops, conditions, and dynamic data. Use template syntax (Jinja2) to include logic in your HTML templates.**
 
 For instance:
-      ```
+      
       html
+      ```
         <ul>
           {% for item in items %}
             <li>{{ item }}</li>
