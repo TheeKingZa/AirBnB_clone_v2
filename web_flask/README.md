@@ -93,9 +93,10 @@ Here, the show_user_profile() function takes the username variable from the URL 
       python
       
         from flask import render_template
+        
         @app.route('/hello/<name>')
-      def hello(name=None):
-        return render_template('template.html', name=name)
+        def hello(name=None):
+          return render_template('template.html', name=name)
       
 This passes the name variable to the template.html file, which can display it dynamically.
 
