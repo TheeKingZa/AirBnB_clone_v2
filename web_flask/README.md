@@ -97,7 +97,7 @@ Here, the show_user_profile() function takes the username variable from the URL 
       def hello(name=None):
         return render_template('template.html', name=name)
       
-This passes the name variable to the template.html file, which can display it dynamically.**
+This passes the name variable to the template.html file, which can display it dynamically.
 
 [^](#need-to-know)
 ---
