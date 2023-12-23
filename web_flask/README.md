@@ -21,7 +21,7 @@ Welcome to the Web Framework Basics project! This README.md provides an overview
 
 ## What is a Web Framework
 
-** Web frameworks provide a structure and tools to facilitate web development. They offer predefined functions, libraries, and utilities to streamline the creation of web applications. **
+**Web frameworks provide a structure and tools to facilitate web development. They offer predefined functions, libraries, and utilities to streamline the creation of web applications.**
 
 ## How to Build a Web Framework with Flask
 /** To build a web framework using Flask, follow these steps:
