@@ -121,12 +121,13 @@ Here, the {% for ... %} block loops through items and displays each item within 
 
 # Display Data from a MySQL Database in HTML
 **To display data from a MySQL database in HTML using Flask:
-    ```
+    
     1.Connect Flask to the MySQL database using a library like flask-mysql.
     2.Query the database to retrieve the desired data.
     3.Pass the fetched data to an HTML template using Flask's render_template function.
     4.Display the data in the HTML template dynamically using template syntax (Jinja2).
-    ```
+
+---
 
 [^](#need-to-know)
 
