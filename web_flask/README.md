@@ -31,7 +31,7 @@ Welcome to the Web Framework Basics project! This README.md provides an overview
 3. Import Flask and define your app: 
 
     python
-    
+
     ```
     from flask import Flask
     app = Flask(__name__)
@@ -65,7 +65,10 @@ This associates the specified URL path ('/') with the index() function, which re
 **In web development, a route refers to the mapping of a URL path to a specific function or resource in a web application. Routes define the endpoints that clients can request.**
 
 # How to Handle Variables in a Route
-**Variables can be handled within routes by specifying a variable section in the URL using <variable_name>.** For example:
+**Variables can be handled within routes by specifying a variable section in the URL using <variable_name>.** 
+---
+
+For example:
     python
     ```
       @app.route('/user/<username>')
