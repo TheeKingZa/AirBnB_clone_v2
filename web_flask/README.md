@@ -40,6 +40,7 @@ Welcome to the Web Framework Basics project! This README.md provides an overview
 ```
 
 [^](#need-to-know)
+---
 
 ## How to Define Routes in Flask
 
@@ -55,6 +56,7 @@ Welcome to the Web Framework Basics project! This README.md provides an overview
 This associates the specified URL path ('/') with the index() function, which returns 'Welcome to the homepage!' **/
 
 [^](#need-to-know)
+---
 
 # What is a Route
 /** In web development, a route refers to the mapping of a URL path to a specific function or resource in a web application. Routes define the endpoints that clients can request. **/
@@ -71,6 +73,7 @@ This associates the specified URL path ('/') with the index() function, which re
 Here, the show_user_profile() function takes the username variable from the URL and displays it in the response. **/
 
 [^](#need-to-know)
+---
 
 # What is a Template
 /** A template in web development refers to a pre-designed layout or structure used to generate dynamic content. In Flask, templates are HTML files that can include placeholders for dynamic data. **/
@@ -91,6 +94,7 @@ Here, the show_user_profile() function takes the username variable from the URL 
 This passes the name variable to the template.html file, which can display it dynamically. **/
 
 [^](#need-to-know)
+---
 
 # Create a Dynamic Template (Loops, Conditions...)
 /** Dynamic templates in Flask allow for incorporating loops, conditions, and dynamic data. Use template syntax (Jinja2) to include logic in your HTML templates. For instance:
