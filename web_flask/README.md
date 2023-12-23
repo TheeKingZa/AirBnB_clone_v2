@@ -9,7 +9,7 @@
 * [What is a route](#what-is-a-route)
 * [How to handle variables in a route](#how-to-handle-variables-in-a-route)
 * [What is a template](#what-is-a-template)
-* [How to create a HTML response in Flask by using a template]()
+* [How to create a HTML response in Flask by using a template](#create-an-html-response-in-flask-using-a-template)
 * [How to create a dynamic template](#create-a-dynamic-template-loops-conditions) (loops, conditions…)
 * [How to display in HTML data from a MySQL database](#display-data-from-a-mysql-database-in-html)
 
