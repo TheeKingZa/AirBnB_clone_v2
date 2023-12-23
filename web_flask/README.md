@@ -115,7 +115,7 @@ For instance:
           {% endfor %}
         </ul>
       
-Here, the {% for ... %} block loops through items and displays each item within an <li> tag.**
+Here, the {% for ... %} block loops through items and displays each item within an <li> tag.
 
 [^](#need-to-know)
 
