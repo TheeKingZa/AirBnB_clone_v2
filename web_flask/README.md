@@ -24,7 +24,7 @@ Welcome to the Web Framework Basics project! This README.md provides an overview
 **Web frameworks provide a structure and tools to facilitate web development. They offer predefined functions, libraries, and utilities to streamline the creation of web applications.**
 
 ## How to Build a Web Framework with Flask
-/** To build a web framework using Flask, follow these steps:
+/**To build a web framework using Flask, follow these steps:**/
 ```
 1. Install Flask using pip: `pip install Flask`
 2. Create a Python file for your application.
@@ -36,7 +36,7 @@ Welcome to the Web Framework Basics project! This README.md provides an overview
     ```
 4. Define routes using the `@app.route` decorator and corresponding functions to handle them.
 5. Run the app: `if __name__ == "__main__": app.run()`
-6. Expand functionality by adding templates, handling routes, and integrating databases. **/
+6. Expand functionality by adding templates, handling routes, and integrating databases.
 ```
 
 [^](#need-to-know)
