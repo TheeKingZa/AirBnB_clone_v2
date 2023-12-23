@@ -24,7 +24,7 @@ Welcome to the Web Framework Basics project! This README.md provides an overview
 **Web frameworks provide a structure and tools to facilitate web development. They offer predefined functions, libraries, and utilities to streamline the creation of web applications.**
 
 ## How to Build a Web Framework with Flask
-/**To build a web framework using Flask, follow these steps:**/
+**To build a web framework using Flask, follow these steps:**
 ```
 1. Install Flask using pip: `pip install Flask`
 2. Create a Python file for your application.
@@ -44,7 +44,7 @@ Welcome to the Web Framework Basics project! This README.md provides an overview
 
 ## How to Define Routes in Flask
 
-/** Routes in Flask are defined using the `@app.route` decorator followed by the URL path. For example:
+**Routes in Flask are defined using the `@app.route` decorator followed by the URL path.** For example:
 
     ```
     python
@@ -53,16 +53,16 @@ Welcome to the Web Framework Basics project! This README.md provides an overview
       return 'Welcome to the homepage!'
     ```
 
-This associates the specified URL path ('/') with the index() function, which returns 'Welcome to the homepage!' **/
+This associates the specified URL path ('/') with the index() function, which returns 'Welcome to the homepage!'
 
 [^](#need-to-know)
 ---
 
 # What is a Route
-/** In web development, a route refers to the mapping of a URL path to a specific function or resource in a web application. Routes define the endpoints that clients can request. **/
+**In web development, a route refers to the mapping of a URL path to a specific function or resource in a web application. Routes define the endpoints that clients can request.**
 
 # How to Handle Variables in a Route
-/** Variables can be handled within routes by specifying a variable section in the URL using <variable_name>. For example:
+**Variables can be handled within routes by specifying a variable section in the URL using <variable_name>.** For example:
 
     ```
     python
@@ -70,16 +70,16 @@ This associates the specified URL path ('/') with the index() function, which re
       def show_user_profile(username):
           return f'User: {username}'
     ```
-Here, the show_user_profile() function takes the username variable from the URL and displays it in the response. **/
+Here, the show_user_profile() function takes the username variable from the URL and displays it in the response.
 
 [^](#need-to-know)
 ---
 
 # What is a Template
-/** A template in web development refers to a pre-designed layout or structure used to generate dynamic content. In Flask, templates are HTML files that can include placeholders for dynamic data. **/
+**A template in web development refers to a pre-designed layout or structure used to generate dynamic content. In Flask, templates are HTML files that can include placeholders for dynamic data.**
 
 # Create an HTML Response in Flask Using a Template
-/** To create an HTML response using a template in Flask:
+**To create an HTML response using a template in Flask:**
 
   Create an HTML template file, e.g., template.html.
   Use Flask's render_template function to render the HTML template and pass dynamic data.
@@ -91,13 +91,15 @@ Here, the show_user_profile() function takes the username variable from the URL 
       def hello(name=None):
         return render_template('template.html', name=name)
       ```
-This passes the name variable to the template.html file, which can display it dynamically. **/
+This passes the name variable to the template.html file, which can display it dynamically.**
 
 [^](#need-to-know)
 ---
 
 # Create a Dynamic Template (Loops, Conditions...)
-/** Dynamic templates in Flask allow for incorporating loops, conditions, and dynamic data. Use template syntax (Jinja2) to include logic in your HTML templates. For instance:
+**Dynamic templates in Flask allow for incorporating loops, conditions, and dynamic data. Use template syntax (Jinja2) to include logic in your HTML templates.**
+
+For instance:
       ```
       html
         <ul>
@@ -106,17 +108,17 @@ This passes the name variable to the template.html file, which can display it dy
           {% endfor %}
         </ul>
       ```
-Here, the {% for ... %} block loops through items and displays each item within an <li> tag. **/
+Here, the {% for ... %} block loops through items and displays each item within an <li> tag.**
 
 [^](#need-to-know)
 
 # Display Data from a MySQL Database in HTML
-/** To display data from a MySQL database in HTML using Flask:
+**To display data from a MySQL database in HTML using Flask:
     ```
     1.Connect Flask to the MySQL database using a library like flask-mysql.
     2.Query the database to retrieve the desired data.
     3.Pass the fetched data to an HTML template using Flask's render_template function.
-    4.Display the data in the HTML template dynamically using template syntax (Jinja2). **/
+    4.Display the data in the HTML template dynamically using template syntax (Jinja2).
     ```
 
 [^](#need-to-know)
