@@ -1,17 +1,17 @@
 # AirBnB clone - Web framework
-[#](https://github.com/TheeKingZa/AirBnB_clone_v2/tree/master/README.md 0x04
+[#](https://github.com/TheeKingZa/AirBnB_clone_v2/tree/master/README.md) 0x04
 ---
 
 # NEED TO KNOW?
-* [What is a Web Framework]()
-* [How to build a web framework with Flask]()
-* [How to define routes in Flask]()
-* [What is a route]()
-* [How to handle variables in a route]()
-* [What is a template]()
+* [What is a Web Framework](#what-is-a-web-framework)
+* [How to build a web framework with Flask](#how-to-build-a-web-framework-with-flask)
+* [How to define routes in Flask](#how-to-define-routes-in-flask)
+* [What is a route](#what-is-a-route)
+* [How to handle variables in a route](#how-to-handle-variables-in-a-route)
+* [What is a template](#what-is-a-template)
 * [How to create a HTML response in Flask by using a template]()
-* [How to create a dynamic template]() (loops, conditions…)
-* [How to display in HTML data from a MySQL database]()
+* [How to create a dynamic template](#create-a-dynamic-template-loops-conditions) (loops, conditions…)
+* [How to display in HTML data from a MySQL database](#display-data-from-a-mysql-database-in-html)
 
 ---
 
