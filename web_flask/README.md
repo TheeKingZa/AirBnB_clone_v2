@@ -89,11 +89,13 @@ Here, the show_user_profile() function takes the username variable from the URL 
 
   Create an HTML template file, e.g., template.html.
   Use Flask's render_template function to render the HTML template and pass dynamic data.
-  Return the rendered template as a response. For example:
+  Return the rendered template as a response. 
+  
+  For example:
       python
       
         from flask import render_template
-        
+
         @app.route('/hello/<name>')
         def hello(name=None):
           return render_template('template.html', name=name)
