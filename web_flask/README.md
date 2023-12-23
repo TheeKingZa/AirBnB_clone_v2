@@ -91,12 +91,12 @@ Here, the show_user_profile() function takes the username variable from the URL 
   Use Flask's render_template function to render the HTML template and pass dynamic data.
   Return the rendered template as a response. For example:
       python
-      ```
+      
         from flask import render_template
         @app.route('/hello/<name>')
       def hello(name=None):
         return render_template('template.html', name=name)
-      ```
+      
 This passes the name variable to the template.html file, which can display it dynamically.**
 
 [^](#need-to-know)
@@ -108,13 +108,13 @@ This passes the name variable to the template.html file, which can display it dy
 For instance:
       
       html
-      ```
+      
         <ul>
           {% for item in items %}
             <li>{{ item }}</li>
           {% endfor %}
         </ul>
-      ```
+      
 Here, the {% for ... %} block loops through items and displays each item within an <li> tag.**
 
 [^](#need-to-know)
