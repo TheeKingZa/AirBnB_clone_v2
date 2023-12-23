@@ -12,6 +12,12 @@
 * [How to create a HTML response in Flask by using a template](#create-an-html-response-in-flask-using-a-template)
 * [How to create a dynamic template](#create-a-dynamic-template-loops-conditions) (loops, conditions…)
 * [How to display in HTML data from a MySQL database](#display-data-from-a-mysql-database-in-html)
+* [W3C Compliance And Validation](#overview)
+* [W3C Validation](#w3c-validation)
+* [What is W3C Validation](#what-is-w3c-validation)
+* [How to Validate](#how-to-validate)
+* [Badge](#badge)
+* [Additional tips](#additional-tips)
 
 ---
 
@@ -138,7 +144,7 @@ Here, the {% for ... %} block loops through items and displays each item within 
 
 # W3C Compliance and Validation
 
-Overview
+# Overview
 This project adheres to W3C (World Wide Web Consortium) standards to ensure compatibility, accessibility, and proper rendering across different browsers and devices. W3C compliance is essential for creating web content that follows best practices and promotes a seamless user experience.
 
 [^](#need-to-know)
@@ -165,7 +171,7 @@ Review and address any issues reported by the validator.
 [^](#need-to-know)
 
 ---
-Badge
+# Badge
 Include a badge in your README to proudly display W3C compliance status. You can use the following Markdown:
 
 markdown
