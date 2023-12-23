@@ -75,7 +75,7 @@ For example:
       @app.route('/user/<username>')
       def show_user_profile(username):
         return f'User: {username}'
-    ```
+    
 Here, the show_user_profile() function takes the username variable from the URL and displays it in the response.
 
 [^](#need-to-know)
