@@ -72,3 +72,10 @@ class FileStorage:
                 # If it exists, delete the key and save the updated dictionary
                 del self.all()[key]
                 self.save()
+    
+    def close(self):
+        """
+        Close the file and call reload()
+        For deserializing the JSON file to objects.
+        """
+        self.reload()        
